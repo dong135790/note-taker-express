@@ -20,7 +20,7 @@ Installation of node.js is required to start the application. No further install
 
 ## Usage
 Begin notes by starting the application. Application is initiated once the user enters 'npm install' to prep the application. Once npm is finished downloading, enter 'npm start' on the CLI and a link will appear corresponding to the application.
-
+![Alt text](public/image/Note-Taker.png)
 ## License
 None
 
