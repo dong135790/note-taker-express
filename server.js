@@ -31,7 +31,9 @@ app.get('/notes', (req, res) => {
 
 app.get('/api/notes', (req, res) => {
     // Serve the HTML page.
-    return res.json(savedNotes)
+    const noteData = fs.readFileSync('./db/db.json', 'utf-8')
+    const notes = JSON.parse(noteData)
+    return res.json(notes)
 });
 
 // if you use '*', it must be on the bottom or it will override every click to index.html page
